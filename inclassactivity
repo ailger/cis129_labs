@@ -1,0 +1,23 @@
+#inclass code along assignment for Abby Ilger
+#Module 5
+#my way:
+#print('Please enter a number:')
+#input(int())
+#if(number %2==0)
+
+def main():
+    userNumber = int(input('Enter a num: '))
+    if(userNumber % 2 ==0):
+        print('The number is even!')
+    else:
+        print('The number is odd!')
+
+def get_integer(message):
+    while True:
+        try:
+            user_input = int(input(message))
+            return user_input
+        except ValueError:
+            print('Incorrect dete entered, please re-attempt')
+
+main() #don't forget to call main
