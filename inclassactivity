@@ -6,11 +6,17 @@
 #if(number %2==0)
 
 def main():
-    userNumber = int(input('Enter a num: '))
-    if(userNumber % 2 ==0):
-        print('The number is even!')
-    else:
-        print('The number is odd!')
+    while True:
+        userNumber = get_integer('Enter a num: ')
+        if(userNumber % 2 ==0):
+            print('The number is even!')
+        else:
+            print('The number is odd!')
+        #using descison structure and loop
+        print('Do you want to do it again?')
+        again = input('enter \'y\' to loop again: ')
+        if again != 'y':
+            break
 
 def get_integer(message):
     while True:
